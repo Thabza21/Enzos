@@ -1,0 +1,153 @@
+body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        main {
+  padding-top: 100px; /* pushes h2 below the fixed navbar */
+}
+
+ .navbar {
+    background: #000;
+    padding: 15px 0;
+    border-bottom: 5px solid #4a4a4a;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    flex-wrap: nowrap;
+  }
+
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+  .navbar a:hover {
+    color: #ff9900;
+  }
+
+  .navbar a.active {
+    background-color: #ff9900;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: #000;
+  }
+
+  #events-heading{
+    color: #ff9900;
+    margin-bottom: -50px;
+  }
+
+.carousel-container {
+            max-width: 1000px;
+            margin: 100px auto 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-item {
+            min-width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .carousel-item img {
+            width: 80%;
+            height: 500px;
+            object-fit: cover;
+            border: 3px solid #ff9900;
+            border-radius: 10px;
+        }
+        .carousel-caption {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .carousel-controls button {
+            background: #ff9900;
+            color: #000;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .carousel-controls button:hover {
+            background: #fff;
+            color: #ff9900;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                height: auto;
+                padding: 8px;
+            }
+            .navbar a {
+                margin: 0 10px;
+                font-size: 13px;
+            }
+            .carousel-item img {
+                height: 300px;
+            }
+            .carousel-caption {
+                font-size: 16px;
+                padding: 8px 15px;
+            }
+            .carousel-controls button {
+                font-size: 18px;
+                padding: 8px;
+            }
+        }
+
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* takes up remaining space, pushes footer down */
+}
+
+footer {
+  color: #ff9900;
+  background: #000;
+  padding: 15px 0;
+  text-align: center;
+  border-top: 3px solid #4a4a4a;
+}
