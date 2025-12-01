@@ -20,8 +20,6 @@ let currentSlide = 0;
             showSlide(currentSlide - 1);
         }
 
-        
-        //setInterval(nextSlide, 5000);
 
 
 
@@ -59,4 +57,5 @@ navLinks.forEach(link => {
     }
   });
 });
+
 
