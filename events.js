@@ -18,8 +18,6 @@ let currentSlide = 0;
             showSlide(currentSlide - 1);
         }
 
-        
-        //setInterval(nextSlide, 5000);
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -42,3 +40,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
