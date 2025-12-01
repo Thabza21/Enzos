@@ -19,7 +19,7 @@ let currentSlide = 0;
         }
 
         
-        setInterval(nextSlide, 5000);
+        //setInterval(nextSlide, 5000);
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -40,4 +40,5 @@ document.addEventListener('DOMContentLoaded', () => {
             e.target.style.borderRadius = '5px';
         });
     });
+
 });
